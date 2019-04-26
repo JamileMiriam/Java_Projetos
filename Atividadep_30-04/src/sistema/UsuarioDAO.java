@@ -48,13 +48,14 @@ public class UsuarioDAO implements IDAO<Usuario>{
         //System.out.println("Digite o nome de Usuario: ");
         
         
-        if(nomeuser == u.getNomeu()){
+        //if(nomeuser == u.getNomeu()){
+        if(nomeuser.equals(u.getNomeu())){
             uexiste = true;
-            System.out.println("O usuario "+ nomeuser +" existe no bando .............");
+            System.out.println("O usuario "+ nomeuser +" existe no banco .............");
         }
         else{
             uexiste = false;
-            System.out.println("O usuario "+ nomeuser +" NÂO existe no bando .............");
+            System.out.println("O usuario "+ nomeuser +" NÂO existe no banco .............");
         }
         return uexiste;
         }
