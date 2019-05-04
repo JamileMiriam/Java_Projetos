@@ -15,22 +15,26 @@ public class Javaj {
         ProfessorDAO pro = new ProfessorDAO(connection);
         //pro.insert(prof);
         
-        Usuario us = new Usuario();
-        us.setNomeu("Pedro");
+         Usuario us = new Usuario();
+        //us.setNomeu("Pedro");
+        //us.setSenha("12345");
         UsuarioDAO user = new UsuarioDAO(connection);
         //user.insert(us);
         //user.update(us);
-        
+        //user.delete(us);
+        user.listaruser();
+        user.loginuser(us);
         /*
         alunoDAO.delete(a1);
         pro.delete(prof);
-        user.delete(us);
-        */
         
+        */
+
+       
         //System.out.println(alunoDAO.listar());
         //alunoDAO.update(a1);
         
-        user.login(us);
+        user.loginuser(us);
         }
     
 }
